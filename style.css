@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .watch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 50%;
+  }
+
+  .dot{
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #000;
+  }
+  
+  .needle {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    width: 2px;
+    height: 70px;
+    /* transform: translateX(-50%) rotate(0deg); */
+    /* transition: transform 0.2s ease-in-out; */
+  }
+
+  #needle-1{
+    background-color: black;
+  }
+
+  #needle-2{
+    background-color: blue;
+  }
+  
+  
+  #needle-2{
+    background-color: red;
+  }
+  .count{
+    background-color: skyblue;
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+  }
