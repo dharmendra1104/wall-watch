@@ -1,65 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .watch{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border: 2px solid #000;
-    border-radius: 50%;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
 
-  .dot{
-    position: absolute;
-    /* top: 50%;
-    left: 50%; */
-    width: 12px;
-    height: 12px;
-    border-radius: 6px;
-    background-color: #000;
-  }
-  
-  .needle {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform-origin: 50% 100%;
-    width: 2px;
-    height: 70px;
-    /* transform: translateX(-50%) rotate(0deg); */
-    /* transition: transform 0.2s ease-in-out; */
-  }
+.watch {
+  background-image: url("png-transparent-social-media-marketing-time-management-clock-clock-without-hands-angle-content-marketing-time.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
 
-  #needle-1{
-    background-color: black;
-  }
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+}
 
-  #needle-2{
-    background-color: blue;
-  }
-  
-  
-  #needle-2{
-    background-color: red;
-  }
-  .count{
-    background-color: skyblue;
-    margin: 20px;
-    padding: 10px;
-    font-size: 25px;
-    border-radius: 5px;
-  }
+.needle {
+  position: absolute;
+  top: 15%;
+  /* left: %; */
+  transform-origin: 50% 100%;
+  width: 3px;
+  height: 102px;
+  /* transform: translateX(-50%) rotate(0deg); */
+  transition: transform 0.2s ease-in-out;
+}
+
+#hour {
+  background-color: red;
+}
+
+#minute {
+  background-color: blue;
+}
+
+
+#second {
+  background-color: black;
+}
+
+.count {
+  background-color: skyblue;
+  margin: 20px;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
