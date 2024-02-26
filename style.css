@@ -9,6 +9,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: #FFE3CA;
   height: 100vh;
   margin: 0;
 }
@@ -44,26 +45,28 @@ body {
   /* left: %; */
   transform-origin: 50% 100%;
   width: 3px;
-  height: 102px;
-  /* transform: translateX(-50%) rotate(0deg); */
-  transition: transform 0.2s ease-in-out;
 }
 
 #hour {
   background-color: red;
+  height: 70px;
+  top: 25%;
 }
 
 #minute {
   background-color: blue;
+  height: 85px;
+  top: 20.2%;
 }
 
 
 #second {
+  height: 102px;
   background-color: black;
 }
 
 .count {
-  background-color: skyblue;
+  background-color: #98ABEE;
   margin: 20px;
   padding: 10px;
   font-size: 25px;
@@ -71,9 +74,10 @@ body {
 }
 
 button {
-  padding: 5px;
-  background-color: blue;
+  padding: 10px;
+  background-color: #387ADF;
   color: white;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
+  border: none;
 }
